@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="LiArtII.js"></script>
+		<title>Li Art II</title>
+	</head>
+	<body bgcolor="#000000" style="color: #FFFFFF" onload="bodyLoadEvent()">
+		<div id="head"></div>
+		<div id="body">
+			<center>
+				<table bordercolor="#FFFFFF" border="1">
+					<tr>
+						<th style="width: 352px">Defend yourself!</th>
+					</tr>
+				</table>
+				<table id="main" bordercolor="#000000" bgcolor="#202020"></table>
+				<br><br><br><br>
+				<table bordercolor="#FFFFFF" border="1">
+					<tr>
+						<th style="width: 380px">Towers</th>
+					</tr>
+				</table>
+				<table id="palette" bordercolor="#000000" border="1">
+					<tr>
+						<td colspan="4"></td>
+						<td colspan="2">Selected:</td>
+						<td id="sl"><img id="sp" src="FF0000.png"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td id="FF0000"><img id="FF0000p" src="FF0000.png" onclick="setSelected(this)"></td>
+						<td id="FFFF00"><img id="FFFF00p" src="FFFF00.png" onclick="setSelected(this)"></td>
+						<td id="00FF00"><img id="00FF00p" src="00FF00.png" onclick="setSelected(this)"></td>
+						<td id="00FFFF"><img id="00FFFFp" src="00FFFF.png" onclick="setSelected(this)"></td>
+						<td id="0000FF"><img id="0000FFp" src="0000FF.png" onclick="setSelected(this)"></td>
+						<td id="FF00FF"><img id="FF00FFp" src="FF00FF.png" onclick="setSelected(this)"></td>
+					</tr>
+					<tr>
+						<th id="mn">Name</th>
+						<td id="FF0000n">Red</td>
+						<td id="FFFF00n">Yellow</td>
+						<td id="00FF00n">Green</td>
+						<td id="00FFFFn">Aqua</td>
+						<td id="0000FFn">Blue</td>
+						<td id="FF00FFn">Purple</td>
+					</tr>
+					<tr>
+						<th id="mc">Cost</th>
+						<td id="FF0000c">100</td>
+						<td id="FFFF00c">175</td>
+						<td id="00FF00c">100</td>
+						<td id="00FFFFc">175</td>
+						<td id="0000FFc">100</td>
+						<td id="FF00FFc">175</td>
+					</tr>
+				</table>
+			</center>
+		</div>
+		<div id="footer"></div>
+	</body>
+</html>
