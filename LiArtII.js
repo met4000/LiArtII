@@ -8,6 +8,7 @@ window.bodyLoadEvent = function () {
 	window.csec = document.getElementById("sp");
 	
 	window.points = 150;
+	window.prevPoints = 0;
 	window.ccos = 100;
 	
 	window.Stats = function (cost, pWait, pSpeed, aIncrement) {
@@ -307,7 +308,7 @@ window.bodyLoadEvent = function () {
 			}
 		}
 		document.title = "Li Art II - Please Wait";
-		setInterval("document.title = 'Li Art II - ' + points + ' points'", 100);
+		setInterval("if (points != prevPoints) { document.title = 'Li Art II - ' + points + ' points'; prevPoints = points; }", 100);
 	};
 	
 	
